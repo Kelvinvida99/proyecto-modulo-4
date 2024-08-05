@@ -19,7 +19,7 @@ export class UserGuard implements CanActivate {
 
     console.log(user.id, '-', idUser);
 
-    if (user.id !== idUser.id) {
+    if (user.id !== idUser) {
       throw new UnauthorizedException('No tienes permiso');
     }
     return true;
