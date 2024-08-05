@@ -10,7 +10,7 @@ import {
 } from '@nestjs/common';
 import { ProductsServices } from './products.service';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { AuthGuard } from 'src/Auth/guards/auth.guard';
+import { AuthGuard } from '../Auth/guards/auth.guard';
 
 @ApiTags('products')
 @Controller('products')

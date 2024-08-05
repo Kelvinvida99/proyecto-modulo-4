@@ -2,8 +2,8 @@ import { Controller, Get, Param, Post, Body, UseGuards } from '@nestjs/common';
 import { OrdersService } from './orders.service';
 import { CreateOrdersDto } from './orders.dto';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { UserGuard } from 'src/Auth/guards/user.guard';
-import { AuthGuard } from 'src/Auth/guards/auth.guard';
+import { UserGuard } from '../Auth/guards/user.guard';
+import { AuthGuard } from '../Auth/guards/auth.guard';
 
 ApiTags('orders');
 @Controller('orders')
